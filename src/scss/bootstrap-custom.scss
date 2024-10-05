@@ -1,0 +1,11 @@
+.container,
+.container-fluid,
+.container-xxl,
+.container-xl,
+.container-lg,
+.container-md,
+.container-sm {
+  @include media-breakpoint-down(sm){
+    --bs-gutter-x: 30px;
+  }
+}

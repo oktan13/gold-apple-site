@@ -1,0 +1,84 @@
+.form-input-select{
+  width: 100%;
+  height: 50px;
+  position: relative;
+
+  &__wrap{
+    background: $white;
+    border: 1px solid $gray-2;
+    border-radius: 15px;
+    position: relative;
+    width: 100%;
+    font-size: 14px;
+    overflow: hidden;
+    transition: 0.2s ease all;
+
+    &:after{
+      content: '\e900';
+      position: absolute;
+      right: 17px;
+      top: 24px;
+      transform: translateY(-50%) rotate(0.25turn);
+      color: $gray-1;
+      font-size: 12px;
+      font-family: $icon-font-family;
+    }
+  }
+
+  &__body{
+    display: none;
+  }
+
+  &__input{
+    border: unset;
+    cursor: pointer;
+    width: 100%;
+    background-color: unset;
+    font-size: 14px;
+    color: $main-color;
+    padding: 13px 36px 13px 25px;
+
+    @include media-breakpoint-up(lg){
+      font-size: 16px;
+      padding: 12px 36px 12px 25px;
+    }
+    &::placeholder{
+      color: $gray-1;
+    }
+    &:focus{
+      outline: unset;
+    }
+  }
+
+  &__item{
+    padding: 13px 25px;
+    transition: all .3s ease;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+
+    @include media-breakpoint-up(lg){
+      font-size: 16px;
+    }
+
+    &:hover{
+      background-color: $gray-3;
+    }
+  }
+
+  &--open{
+    z-index: 3;
+
+    & ~ .input-select--open{
+      z-index: 2;
+    }
+
+    .form-input-select__wrap{
+      border-color: $main-color;
+
+      &:after{
+        color: $main-color;
+      }
+    }
+  }
+}

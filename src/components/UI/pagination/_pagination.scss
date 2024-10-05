@@ -1,0 +1,16 @@
+.pagination{
+  display: flex;
+  gap: 10px;
+  width: fit-content;
+
+  .swiper-pagination-bullet{
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: #28212533;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: $main-color;
+  }
+}

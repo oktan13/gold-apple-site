@@ -1,0 +1,45 @@
+.input{
+  background-color: $white;
+  border: 1px solid $white;
+  border-radius: 25px;
+  outline: unset;
+  width: 100%;
+  font-size: 14px;
+  color: $main-color;
+  padding: 13px 25px;
+
+  @include media-breakpoint-up(md){
+    font-size: 16px;
+    padding: 12px 25px;
+  }
+
+  &::placeholder{
+    color: $main-color;
+  }
+
+  &:focus{
+    color: $main-color;
+  }
+
+  &--search{
+    padding-right: 45px;
+    background-color: $gray-5;
+    border-color: $gray-5;
+  }
+}
+
+.input-container{
+  width: 100%;
+  position: relative;
+
+  .icon-search{
+    position: absolute;
+    right: 24px;
+    font-size: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+
+

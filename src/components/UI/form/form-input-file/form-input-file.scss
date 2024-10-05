@@ -1,0 +1,34 @@
+.form-input-file{
+  border-radius: 15px;
+  border: 1px dashed $gray-2;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding: 0 19px;
+  height: 100%;
+  transition: $default-transition;
+
+  @include media-breakpoint-down(md){
+    height: 165px;
+  }
+
+  &--hover{
+    border-style: solid;
+    border-color: $second-color;
+  }
+  &__label{
+    cursor: pointer;
+    text-decoration: underline;
+    color: $second-color;
+    transition: $default-transition;
+
+    &:hover{
+      color: $second-color-active;
+    }
+  }
+  &__text{
+    color: $gray-1;
+  }
+}

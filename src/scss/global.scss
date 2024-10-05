@@ -1,0 +1,67 @@
+.overflow-hidden-mobile{
+  @include media-breakpoint-down(lg){
+    overflow: hidden;
+  }
+}
+
+.heading{
+  font-size: 40px;
+  color: $main-text-color;
+  font-family: $header-font-family;
+  line-height: 40px;
+  font-weight: 700;
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.link{
+  display: inline;
+  text-decoration: underline;
+  transition: $default-transition;
+  color: $second-color;
+
+  &:hover{
+    color: $second-color;
+  }
+}
+
+.main-container{
+  width: 100%;
+  overflow: hidden;
+  &__heading{
+    margin-bottom: 27px;
+
+    @include media-breakpoint-up(md){
+      margin-bottom: 35px;
+    }
+    @include media-breakpoint-down(lg){
+      line-height: 29px;
+    }
+  }
+}
+
+.big-txt-wrap {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.big-txt {
+  font-family: $header-font-family;
+  font-size: 1.75em;
+  text-transform: uppercase;
+  & span {
+    font-style: italic;
+  }
+}
+
+p span {
+  color: $second-color;
+}
+
+.mb-30 {
+  margin-bottom: 30px;
+}
+

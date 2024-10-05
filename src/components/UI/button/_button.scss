@@ -1,0 +1,120 @@
+.button{
+  border-radius: 50px;
+  cursor: pointer;
+  color: $white;
+  background-color: $second-color;
+  border: 1px solid $second-color;
+  transition: $default-transition;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+  padding: 0 13px;
+
+  @include media-breakpoint-up(lg){
+    height: 70px;
+    padding: 0 40px;
+    font-size: 1.125em;
+    &:hover{
+      background-color: $second-color;
+      border-color: $second-color;
+    }
+  }
+
+  &--transparent{
+    background-color: unset;
+    border-color: $white;
+    height: 56px;
+    @include media-breakpoint-up(lg){
+      height: 56px;
+      border-radius: 30px;
+      padding: 0 30px;
+      font-size: 1em;
+      &:hover{
+      }
+    }
+  }
+
+  &--disabled{
+    background-color: $gray-6;
+    border-color: $gray-6;
+    cursor: default;
+    color: $main-color;
+    opacity: 0.8;
+
+    &:hover{
+      color: $main-color;
+      background-color: $gray-6;
+      border-color: $gray-6;
+    }
+  }
+  &--circle{
+    position: relative;
+    width: 40px;
+    padding: 0;
+    border-radius: 100%;
+
+    @include media-breakpoint-up(lg){
+      width: 50px;
+    }
+
+    &:after{
+      position: absolute;
+      font-family: $icon-font-family;
+      color: $white;
+      font-size: 14px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+
+      @include media-breakpoint-up(lg){
+        font-size: 17px;
+      }
+    }
+  }
+
+  &--with-icon{
+    i{
+      font-size: 16px;
+
+      &:first-child{
+        margin-right: 15px;
+      }
+      &:last-child{
+        margin-left: 15px;
+      }
+    }
+  }
+
+  &--second-color{
+    background-color: $second-color;
+    border-color: $second-color;
+
+    @include media-breakpoint-up(lg){
+      &:hover{
+        background-color: var(--second-color-active);
+        border-color: var(--second-color-active);
+      }
+    }
+  }
+
+
+
+  &--transparent-white{
+    background-color: unset;
+    border-color: $white;
+    color: $white;
+
+    @include media-breakpoint-up(lg){
+      &:hover{
+        color: $main-color;
+        background-color: $white;
+        border-color: $white;
+      }
+    }
+  }
+}
+
+
+

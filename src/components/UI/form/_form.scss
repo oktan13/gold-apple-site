@@ -1,0 +1,174 @@
+.form{
+  background-color: $white;
+  border-radius: 35px;
+  padding: 40px 40px 50px;
+
+  @include media-breakpoint-down(lg){
+    border-radius: 25px;
+    padding: 31px 16px 25px;
+  }
+
+  &__title{
+    font-family: $header-font-family;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 25px;
+
+    @include media-breakpoint-down(lg){
+      font-size: 24px;
+      line-height: 29px;
+      margin-bottom: 16px;
+    }
+    @include media-breakpoint-down(md){
+      margin-bottom: 20px;
+    }
+  }
+  &__subtitle{
+    font-family: $header-font-family;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 25px;
+
+    @include media-breakpoint-down(lg){
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(md){
+      margin-bottom: 15px;
+    }
+  }
+  &__text{
+    line-height: 22px;
+    margin-bottom: 31px;
+
+    @include media-breakpoint-down(lg){
+      line-height: 20px;
+      margin-bottom: 15px;
+    }
+  }
+  &__row{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(10px,1fr));
+    gap: 24px;
+
+    @include media-breakpoint-down(md){
+      grid-template-columns: auto;
+      gap: 18px;
+    }
+
+    &:not(:last-child){
+      margin-bottom: 28px;
+      @include media-breakpoint-down(md){
+        margin-bottom: 18px;
+      }
+    }
+  }
+  &__input-wrap{
+    &--file{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  &__input-name{
+    color: $gray-1;
+    line-height: 1;
+    font-size: 14px;
+
+    @include media-breakpoint-down(lg){
+      font-size: 12px;
+    }
+  }
+  &__input-name{
+    margin-bottom: 12px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 11px;
+    }
+  }
+  &__textarea{
+    background-color: $white;
+    border: 1px solid $gray-2;
+    border-radius: 15px;
+    outline: unset;
+    width: 100%;
+    font-size: 14px;
+    color: $main-color;
+    padding: 13px 25px;
+    resize: none;
+    height: 215px;
+    margin-bottom: -7px;
+
+    @include media-breakpoint-up(md){
+      height: 150px;
+    }
+    @include media-breakpoint-up(lg){
+      font-size: 16px;
+      height: 170px;
+      padding: 12px 25px;
+    }
+
+    &::placeholder{
+      color: $gray-1;
+    }
+
+    &:focus{
+      color: $main-color;
+    }
+  }
+  &__button{
+    font-weight: 500;
+    width: 260px;
+
+    @include media-breakpoint-down(md){
+      width: 100%;
+    }
+  }
+  &__button-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+
+    @include media-breakpoint-down(md){
+      flex-direction: column;
+      gap: 20px;
+    }
+  }
+  &__agree{
+    display: flex;
+    gap: 8px;
+
+    &-text{
+      font-size: 14px;
+    }
+    .checkbox{
+      top: 2px;
+    }
+  }
+  &__input{
+    background-color: $white;
+    border: 1px solid $gray-2;
+    border-radius: 15px;
+    outline: unset;
+    width: 100%;
+    font-size: 14px;
+    color: $main-color;
+    padding: 13px 25px;
+    font-weight: 500;
+
+    @include media-breakpoint-up(lg){
+      font-size: 16px;
+      padding: 12px 25px;
+    }
+
+    &::placeholder{
+      color: $gray-1;
+    }
+
+    &:focus{
+      color: $main-color;
+    }
+  }
+}

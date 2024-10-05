@@ -1,0 +1,81 @@
+:root{
+  --color-black: #000;
+  --color-white: #fff;
+  --color-dark: #222222;
+  --color-green: #BDCE76;
+  --color-purple: #5948A0;
+  --color-crimson: #F32688;
+  --color-dark-crimson: #E13249;
+  --color-light-red: #F75066;
+  --color-violet: #B29FE6;
+  --color-limon: #ECFFA8;
+  --color-blue: #2781BB;
+  --color-blue-lite: #46a3df;
+  --color-blue-active: #005881;
+  --color-gray-1: #A9A6A8;
+  --color-gray-2: #D4D3D3;
+  --color-gray-3: #EDEDF3;
+  --color-gray-4: #D3D3E0;
+  --color-gray-5: #F2F2F7;
+  --color-gray-6: #E1E1E1;
+  --color-red: #ED254E;
+  --color-turquoise: #06BCC1;
+
+  --second-color: var(--color-purple);
+  --second-color-active: var(--color-purple);
+  --active-color: var(--color-purple);
+
+  --bs-primary: #282125;
+  --bs-secondary: #F32688;
+  --bs-success: #06BCC1;
+  --bs-info: #BC62EF;
+  --bs-warning: #ECFFA8;
+  --bs-danger: #ED254E;
+  --bs-light: #f4f4f4;
+  --bs-dark: #222222;
+
+  --bs-primary-rgb: 40, 33, 37;
+  --bs-secondary-rgb: 243, 38, 136;
+  --bs-success-rgb: 6, 188, 193;
+  --bs-info-rgb: 13, 202, 240;
+  --bs-warning-rgb: 236, 255, 168;
+  --bs-danger-rgb: 237, 37, 78;
+  --bs-light-rgb: 248, 249, 250;
+  --bs-dark-rgb: 33, 37, 41;
+
+  --body-font-family: 'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --header-font-family: 'Constantia' ,'Montserrat', system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --icon-font-family: icomoon;
+  --body-font-size: 16px;
+  --body-mobile-font-size: 14px;
+  --body-font-weight: 400;
+  --body-background-color: #ffffff;
+  --body-line-height: 1.5;
+  --body-transition: all .3s ease;
+}
+
+$main-color: var(--color-dark);
+$second-color: var(--second-color);
+$second-color-active: var(--second-color-active);
+$third-color: var(--color-green);
+$success-color: var(--color-turquoise);
+$error-color: var(--color-red);
+$active-color: var(--active-color);
+$gray-1: var(--color-gray-1);
+$gray-2: var(--color-gray-2);
+$gray-3: var(--color-gray-3);
+$gray-4: var(--color-gray-4);
+$gray-5: var(--color-gray-5);
+$gray-6: var(--color-gray-6);
+$white: var(--color-white);
+$black: var(--color-black);
+
+$main-text-color: var(--bs-primary);
+
+$header-font-family: var(--header-font-family);
+$icon-font-family: var(--icon-font-family)!important;
+
+$default-transition: var(--body-transition);
+
+
+

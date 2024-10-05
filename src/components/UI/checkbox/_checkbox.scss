@@ -1,0 +1,48 @@
+.checkbox{
+  position: relative;
+
+  &__input{
+    position: absolute;
+    opacity: 0;
+    height: 0;
+    width: 0;
+  }
+  &__span{
+    position: relative;
+    display: block;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    border-radius: 5px;
+    border: 1px solid $gray-1;
+
+    &:after{
+      content: "\e91d";
+      transform: translate(-50%);
+      top: 0;
+      height: 11px;
+      left: 50%;
+      font-size: 10px;
+      font-family: $icon-font-family;
+      color: $white;
+      position: absolute;
+      display: none;
+    }
+  }
+  &:hover .checkbox__input:not(:checked) ~ .checkbox__span{
+    border-color: $second-color;
+
+    &:after{
+      display: block;
+      color: $second-color;
+    }
+  }
+  .checkbox__input:checked ~ .checkbox__span{
+    background-color: $second-color;
+    border-color: $second-color;
+
+    &:after{
+      display: block;
+    }
+  }
+}

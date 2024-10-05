@@ -1,0 +1,33 @@
+import companyGroupsSwiper from "../components/company-groups/company-groups-swiper/company-groups-swiper.js";
+import popupVideo from "../components/UI/popup/popup-video/popup-video.js";
+import menu from "../components/menu/menu.js";
+import aboutCompanySwiper from "../components/about-company/about-company-swiper/about-company-swiper.js";
+import tabs from "../components/UI/tabs/tabs.js";
+import vendorsLine from "../components/vendors/vendors-line/vendors-line.js";
+import footer from "../components/footer/footer.js";
+import toggle from "../components/UI/toggle/toggle.js";
+import aboutSwipers from "../components/about/about.js";
+import form from "../components/UI/form/form.js";
+import formInputSelect from "../components/UI/form/form-input-select/form-input-select";
+import formInputDate from "../components/UI/form/form-input-date/form-input-date";
+import formInputFile from "../components/UI/form/form-input-file/form-input-file";
+import popup from "../components/UI/popup/popup.js";
+import cookies from "../components/cookies/cookies.js";
+
+window.addEventListener('DOMContentLoaded', function () {
+    menu();
+    popupVideo();
+    companyGroupsSwiper();
+    aboutCompanySwiper();
+    tabs();
+    toggle();
+    vendorsLine();
+    footer();
+    aboutSwipers();
+    popup();
+    cookies();
+    form();
+    formInputSelect();
+    formInputDate();
+    formInputFile();
+});
