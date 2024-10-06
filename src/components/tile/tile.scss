@@ -1,0 +1,14 @@
+.tile {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  &__item {
+    width: 100%;
+    background-color: $white;
+    padding: 20px;
+    border-radius: 20px;
+    &-img {
+      margin-bottom: 40px;
+    }
+  }
+}

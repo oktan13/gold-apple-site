@@ -1,0 +1,17 @@
+.column-info {
+  margin-bottom: 80px;
+}
+
+.numbers {
+  &__item-value {
+    font-family: $header-font-family;
+    font-size: 4em;
+    line-height: 1;
+    color: $second-color;
+    margin-bottom: 10px;
+    font-style: italic;
+  }
+  &__item-desc {
+    color: $gray-1;
+  }
+}
