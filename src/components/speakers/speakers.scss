@@ -1,0 +1,35 @@
+.speakers {
+  &__item {
+    border-radius: 20px;
+    background-color: $white;
+    &--out {
+      margin-top: 100px;
+    }
+  }
+  &__item-img img {
+    width: 100%;
+    border-radius: 20px;
+  }
+  &__item-info {
+    padding: 20px;
+  }
+  &__item-about-list {
+    padding-left: 15px;
+    & li {
+      margin-bottom: 30px;
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+    & li span {
+      color: $second-color;
+      font-weight: 600;
+    }
+    & li::marker {
+      color: $second-color;
+    }
+  }
+  &__item-name--md {
+    font-size: 1.5em;
+  }
+}

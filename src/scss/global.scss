@@ -69,3 +69,18 @@ p span {
   margin-bottom: 20px;
 }
 
+.heading-ico--star {
+  position: relative;
+  display: inline-block;
+  &:before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-image: url("../img/icons/star.svg");
+    top: -35px;
+    right: -55px;
+    z-index: 1;
+  }
+}
