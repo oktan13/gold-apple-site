@@ -1,0 +1,57 @@
+.tariffs {
+  &__item {
+    height: 670px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 40px;
+    border-radius: 20px;
+    background-color: $white;
+    position: relative;
+  }
+  &__heading-sub-title {
+    font-size: 1.125em;
+    color: $gray-1;
+    margin-top: 10px;
+  }
+  &__price-box {
+    max-width: 315px;
+    margin-bottom: 20px;
+  }
+  &__old-price {
+    font-size: 1.5em;
+    color: $gray-1;
+    font-family: $header-font-family;
+    position: relative;
+    &:before {
+      content: "";
+      display: block;
+      width: 100%;
+      position: absolute;
+      border-top: 1px solid $gray-1;
+      top: 50%;
+    }
+  }
+  &__discount {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &-percent {
+        background-color: var(--body-background-color);
+        padding: 7px 14px;
+        border-radius: 20px;
+        color: $second-color;
+      }
+  }
+  &__price {
+    font-size: 3em;
+    color: $third-color;
+    line-height: 1.2;
+    font-family: $header-font-family;
+  }
+  &__ico {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+  }
+}
