@@ -3,6 +3,17 @@
 }
 
 .numbers {
+  &__item--col {
+    display: flex;
+    align-items: center;
+    & .numbers__item-desc {
+      padding-left: 15px;
+      flex: 1;
+    }
+    & .numbers__item-value {
+      margin-bottom: 0;
+    }
+  }
   &__item-value {
     font-family: $header-font-family;
     font-size: 4em;
