@@ -26,7 +26,9 @@
   &--middle {
     width: 440px;
   }
-
+  &--small {
+    width: 365px;
+  }
   &--transparent{
     background-color: unset;
     border-color: $white;
