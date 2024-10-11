@@ -10,6 +10,7 @@ import formInputFile from "../components/UI/form/form-input-file/form-input-file
 import popup from "../components/UI/popup/popup.js";
 
 window.addEventListener('DOMContentLoaded', function () {
+
     menu();
     popupVideo();
     tabs();
