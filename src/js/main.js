@@ -14,7 +14,6 @@ window.addEventListener('DOMContentLoaded', function () {
     popupVideo();
     tabs();
     toggle();
-    footer();
     popup();
     form();
     formInputSelect();
