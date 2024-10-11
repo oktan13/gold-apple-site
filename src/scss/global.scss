@@ -1,3 +1,9 @@
+section {
+  margin-bottom: 10em;
+  @include media-breakpoint-down(xl) {
+    margin-bottom: 6.25em;
+  }
+}
 .overflow-hidden-mobile{
   @include media-breakpoint-down(lg){
     overflow: hidden;
@@ -46,6 +52,9 @@
   max-width: 1000px;
   width: 100%;
   margin: 0 auto;
+  @include media-breakpoint-down(1000px) {
+    padding: 0 20px;
+  }
 }
 
 .big-txt {
@@ -54,6 +63,9 @@
   text-transform: uppercase;
   & span {
     font-style: italic;
+  }
+  @include media-breakpoint-down(xl) {
+    font-size: 1.5em;
   }
 }
 

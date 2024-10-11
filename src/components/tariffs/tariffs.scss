@@ -54,4 +54,25 @@
     top: 40px;
     right: 40px;
   }
+  &__item--active {
+    background-color: $second-color;
+    .tariffs__heading-title {
+      color: $white;
+    }
+    .tariffs__heading-sub-title {
+      color: $white;
+    }
+    .tariffs__price-box {
+      color: $white;
+    }
+    .tariffs__old-price {
+      color: $white;
+      &:before {
+        border-top: 1px solid $white;
+      }
+    }
+    .tariffs__discount-percent {
+      background-color: $white;
+    }
+  }
 }

@@ -16,8 +16,8 @@
     padding: 0 40px;
     font-size: 1.125em;
     &:hover{
-      background-color: $second-color;
-      border-color: $second-color;
+      background-color: $second-color-active;
+      border-color: $second-color-active;
     }
   }
   &--full {
@@ -33,13 +33,43 @@
     background-color: unset;
     border-color: $white;
     height: 56px;
+    width: 200px;
+    padding: 0;
     @include media-breakpoint-up(lg){
       height: 56px;
       border-radius: 30px;
-      padding: 0 30px;
       font-size: 1em;
       &:hover{
+        background-color: unset;
+        font-weight: 600;
+        border: 3px solid $white;
       }
+    }
+  }
+
+  &--transparent-purple {
+    background-color: unset;
+    border-color: $second-color;
+    color: $second-color;
+    @include media-breakpoint-up(lg){
+      &:hover{
+        color: $second-color;
+        background-color: unset;
+        font-weight: 600;
+        border: 3px solid $second-color;
+      }
+    }
+  }
+
+  &--white {
+    background-color: $white;
+    color: $second-color;
+    border: none;
+    &:hover {
+      font-weight: 600;
+      background-color: $white;
+      color: $second-color;
+      border: none;
     }
   }
 

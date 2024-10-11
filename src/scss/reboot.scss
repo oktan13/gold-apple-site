@@ -56,6 +56,9 @@ h1 {
 h2 {
   font-size: 3em;
   line-height: 1.2;
+  @include media-breakpoint-down(xl) {
+    font-size: 2em;
+  }
 }
 
 h6 span, h5 span, h4 span, h3 span, h2 span, h1 span {
@@ -346,8 +349,4 @@ progress {
 
 [hidden] {
   display: none !important;
-}
-
-section {
-  margin-bottom: 10em;
 }

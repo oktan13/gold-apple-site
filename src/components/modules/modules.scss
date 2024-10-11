@@ -54,4 +54,19 @@
   &:last-child {
     margin-bottom: 0;
   }
+  &--active {
+    background-color: $second-color;
+    .modules__item-num {
+      color: $third-color;
+    }
+    .modules__item-name {
+      color: $white;
+      & span {
+        color: $third-color;
+      }
+    }
+    .modules__item-list-item {
+      color: $white;
+    }
+  }
 }
