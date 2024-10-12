@@ -11,7 +11,11 @@ export default function tileSwiper() {
                 tileCarousel = new Swiper(tileSwiperContainer, {
                     modules: [],
                     loop: false,
-                    slidesPerView: 1,
+                    slidesPerView: 'auto',
+                    breakpoints: {
+                        576: {
+                        }
+                    }
                 });
             }
         }

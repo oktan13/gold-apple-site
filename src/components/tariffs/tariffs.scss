@@ -8,6 +8,21 @@
     border-radius: 20px;
     background-color: $white;
     position: relative;
+    @include media-breakpoint-down(xl){
+      height: 550px;
+    }
+    @include media-breakpoint-down(lg){
+      padding: 20px;
+      height: 440px;
+    }
+    @include media-breakpoint-down(sm){
+      height: 400px;
+    }
+    &:first-child {
+      @include media-breakpoint-down(md){
+        margin-bottom: 15px;
+      }
+    }
   }
   &__heading-sub-title {
     font-size: 1.125em;
@@ -17,6 +32,10 @@
   &__price-box {
     max-width: 315px;
     margin-bottom: 20px;
+    @include media-breakpoint-down(lg){
+      width: 100%;
+      max-width: 100%;
+    }
   }
   &__old-price {
     font-size: 1.5em;
@@ -53,6 +72,22 @@
     position: absolute;
     top: 40px;
     right: 40px;
+    @include media-breakpoint-down(xxl){
+      right: 20px;
+    }
+    @include media-breakpoint-down(lg){
+      top: 20px;
+    }
+    &--flag {
+      @include media-breakpoint-down(lg){
+        width: 32px;
+      }
+    }
+    &--heart {
+      @include media-breakpoint-down(lg){
+        width: 64px;
+      }
+    }
   }
   &__item--active {
     background-color: $second-color;

@@ -5,6 +5,16 @@
     position: absolute;
     top: -75px;
     z-index: 1;
+    @include media-breakpoint-down(xxl){
+      left: auto;
+      right: 40px;
+      top: -95px;
+    }
+    @include media-breakpoint-down(sm){
+      left: auto;
+      right: -20px;
+      top: -55px;
+    }
   }
 }
 .modules__item {
@@ -13,6 +23,9 @@
   background-color: $white;
   border-radius: 20px;
   width: 100%;
+  @include media-breakpoint-down(lg){
+    padding: 20px;
+  }
   &-head {
     display: flex;
     flex-wrap: wrap;
@@ -22,21 +35,32 @@
   &-num {
     color: $second-color;
     font-size: 1.5em;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 20px;
+    }
   }
   &-name {
     font-style: italic;
     line-height: 1.2;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 20px;
+    }
   }
   &-list {
-    display: flex;
     &-column {
       width: 50%;
+      @include media-breakpoint-down(lg){
+        width: 100%;
+      }
     }
   }
   &-list-item {
     display: flex;
     margin-bottom: 20px;
     padding-right: 10px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 15px;
+    }
     & span {
       color: $third-color;
       margin-right: 10px;

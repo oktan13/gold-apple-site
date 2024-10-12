@@ -1,4 +1,7 @@
 .tile {
+  @include media-breakpoint-down(sm) {
+    overflow: visible;
+  }
   &__wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -21,13 +24,14 @@
         margin-bottom: 16px;
       }
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(sm) {
       height: 228px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       flex-wrap: wrap;
       align-items: flex-start;
+      width: 255px;
     }
   }
 }
