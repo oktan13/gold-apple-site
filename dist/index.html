@@ -403,56 +403,71 @@
     </div>
 </section>
     <section>
-    <div class="container">
+    <div class="container-xl">
         <h2 class="mb-30">Наша <span>большая цель</span></h2>
-        <div class="numbers row">
-            <div class="numbers__item numbers__item--col col-4">
+        <div class="numbers numbers--col row">
+            <div class="numbers__item numbers__item--col col-12 col-sm-6 col-lg-4">
                 <div class="numbers__item-value">
                     01
                 </div>
-                <div class="numbers__item-desc">
-                    обученных администраторов <br> и мастеров
+                <div class="numbers__item-desc text-start">
+                    Сделать ваш бизнес <br>успешным и прибыльным.
                 </div>
             </div>
-            <div class="numbers__item numbers__item--col col-4">
+            <div class="numbers__item numbers__item--col col-12 col-sm-6 col-lg-4">
                 <div class="numbers__item-value">
                     02
                 </div>
-                <div class="numbers__item-desc">
-                    лет опыта <br>в сфере услуг
+                <div class="numbers__item-desc text-start">
+                    Развить профессионализм <br>каждого сотрудника.
                 </div>
             </div>
-            <div class="numbers__item numbers__item--col col-4">
+            <div class="numbers__item numbers__item--col col-12 col-sm-6 col-lg-4">
                 <div class="numbers__item-value">
                     03
                 </div>
-                <div class="numbers__item-desc">
-                    средняя оценка бизнеса наших <br>клиентов на Яндекс.Картах и 2ГИС
+                <div class="numbers__item-desc text-start">
+                    Максимально поднять <br>планку сервиса.
                 </div>
             </div>
         </div>
-        <img src="img/target.jpg" alt="..." class="target-img">
+        <picture>
+            <source srcset="img/terget-md.jpg" media="(max-width: 768px)">
+            <img src="img/target.jpg" alt="наша цель" class="target-img">
+        </picture>
     </div>
 </section>
     <section>
-        <div class="container text-center">
-            <h2 class="mb-20">Присоединяйтесь к нам и станьте <br><span>частью этого важного процесса!</span></h2>
+        <div class="container-lg text-center">
+            <h2 class="mb-20">Присоединяйтесь к нам и станьте <br class="d-none d-sm-inline"><span>частью этого важного процесса!</span></h2>
             <button class="mx-auto button button--middle">Записаться на курс</button>
         </div>
     </section>
     <section>
-    <div class="container">
-        <div class="row mb-3">
-            <div class="col-4">
+    <div class="container-xl">
+        <div class="row mb-4">
+            <div class="col-12 col-md-7 col-lg-4 mb-3 mb-lg-0">
                 <h2>Наши <span>cпикеры</span></h2>
             </div>
-            <div class="col-4">
+            <div class="col-12 col-sm-7 col-lg-4">
                 <p>Внедрили основы высокого сервиса в 80 салонов в России, СНГ и Европе и обучили более 2000 администраторов и мастеров.</p>
             </div>
         </div>
-        <div class="row speakers">
-            <div class="col-4">
-                <div class="speakers__item">
+        <div class="swiper speakers" data-speakers="swiper">
+            <div class="speakers-swiper-buttons">
+                <div class="swiper-btn-prev">
+                    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1538 1.68621C10.8518 2.07649 6.68621 3.37251 2.88411 5.36073L2.2782 4.04262C6.65591 5.92774 11.1472 7.28268 15.7522 8.52715C16.1763 8.64497 17.123 9.0058 16.9867 9.58754C16.8504 10.1693 15.7522 9.98518 15.3735 9.91154C10.4731 8.93216 5.64858 7.20904 1.08152 5.25027C0.62709 5.05145 -0.342371 4.36662 0.475611 3.93216C4.6564 1.73776 9.24618 0.449097 13.9723 0.00727057C14.6161 -0.0516396 15.6234 0.250275 15.9794 0.809922C16.3656 1.42111 15.6461 1.63466 15.1538 1.67885V1.68621Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="swiper-btn-next">
+                    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.84618 1.68621C6.14815 2.07649 10.3138 3.37251 14.1159 5.36073L14.7218 4.04262C10.3441 5.92774 5.85278 7.28268 1.24785 8.52715C0.823712 8.64497 -0.123029 9.0058 0.0133015 9.58754C0.149632 10.1693 1.24785 9.98518 1.62654 9.91154C6.52685 8.93216 11.3514 7.20904 15.9185 5.25027C16.3729 5.05145 17.3424 4.36662 16.5244 3.93216C12.3436 1.73776 7.75382 0.449097 3.02771 0.00727057C2.38393 -0.0516396 1.3766 0.250275 1.02063 0.809922C0.634362 1.42111 1.35388 1.63466 1.84618 1.67885V1.68621Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+            <div class="swiper-wrapper speakers__wrapper">
+                <div class="swiper-slide speakers__item">
                     <div class="speakers__item-img">
                         <img src="img/speak-1.jpg" alt="..." >
                     </div>
@@ -469,9 +484,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="speakers__item speakers__item--out">
+                <div class="swiper-slide speakers__item speakers__item--out">
                     <div class="speakers__item-img">
                         <img src="img/speak-2.jpg" alt="..." >
                     </div>
@@ -491,9 +504,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="speakers__item">
+                <div class="swiper-slide speakers__item">
                     <div class="speakers__item-img">
                         <img src="img/speak-3.jpg" alt="..." >
                     </div>
@@ -514,13 +525,26 @@
 </section>
 
 <section>
-    <div class="container">
-        <div class="text-center mb-30">
+    <div class="container-xl">
+        <div class="text-start text-lg-center mb-30">
             <h2 class="heading-ico--star">Приглашенные <span>эксперты</span></h2>
         </div>
-        <div class="row speakers">
-            <div class="col-4">
-                <div class="speakers__item">
+        <div class="swiper speakers" data-speakers="swiper">
+            <div class="speakers-swiper-buttons">
+                <div class="swiper-btn-prev">
+                    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M15.1538 1.68621C10.8518 2.07649 6.68621 3.37251 2.88411 5.36073L2.2782 4.04262C6.65591 5.92774 11.1472 7.28268 15.7522 8.52715C16.1763 8.64497 17.123 9.0058 16.9867 9.58754C16.8504 10.1693 15.7522 9.98518 15.3735 9.91154C10.4731 8.93216 5.64858 7.20904 1.08152 5.25027C0.62709 5.05145 -0.342371 4.36662 0.475611 3.93216C4.6564 1.73776 9.24618 0.449097 13.9723 0.00727057C14.6161 -0.0516396 15.6234 0.250275 15.9794 0.809922C16.3656 1.42111 15.6461 1.63466 15.1538 1.67885V1.68621Z" fill="white"/>
+                    </svg>
+                </div>
+                <div class="swiper-btn-next">
+                    <svg width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.84618 1.68621C6.14815 2.07649 10.3138 3.37251 14.1159 5.36073L14.7218 4.04262C10.3441 5.92774 5.85278 7.28268 1.24785 8.52715C0.823712 8.64497 -0.123029 9.0058 0.0133015 9.58754C0.149632 10.1693 1.24785 9.98518 1.62654 9.91154C6.52685 8.93216 11.3514 7.20904 15.9185 5.25027C16.3729 5.05145 17.3424 4.36662 16.5244 3.93216C12.3436 1.73776 7.75382 0.449097 3.02771 0.00727057C2.38393 -0.0516396 1.3766 0.250275 1.02063 0.809922C0.634362 1.42111 1.35388 1.63466 1.84618 1.67885V1.68621Z" fill="white"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="swiper-wrapper speakers__wrapper">
+                <div class="swiper-slide speakers__item">
                     <div class="speakers__item-img">
                         <img src="img/exp-1.jpg" alt="..." >
                     </div>
@@ -539,9 +563,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="speakers__item speakers__item--out">
+                <div class="swiper-slide speakers__item speakers__item--out">
                     <div class="speakers__item-img">
                         <img src="img/exp-2.jpg" alt="..." >
                     </div>
@@ -561,9 +583,7 @@
                         </ul>
                     </div>
                 </div>
-            </div>
-            <div class="col-4">
-                <div class="speakers__item">
+                <div class="swiper-slide speakers__item">
                     <div class="speakers__item-img">
                         <img src="img/exp-3.jpg" alt="..." >
                     </div>
@@ -581,6 +601,7 @@
                     </div>
                 </div>
             </div>
+
         </div>
     </div>
 </section>

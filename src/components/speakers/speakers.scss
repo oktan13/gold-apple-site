@@ -1,9 +1,32 @@
 .speakers {
+  position: relative;
+  @include media-breakpoint-down(lg){
+    overflow: visible;
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    @include media-breakpoint-down(lg){
+      display: flex;
+      gap: unset;
+    }
+  }
   &__item {
     border-radius: 20px;
     background-color: $white;
+    height: fit-content;
     &--out {
       margin-top: 100px;
+      @include media-breakpoint-down(lg){
+        margin-top: 0;
+      }
+    }
+    @include media-breakpoint-down(lg){
+      width: 440px;
+    }
+    @include media-breakpoint-down(sm){
+      width: 100%;
     }
   }
   &__item-img img {
@@ -32,4 +55,35 @@
   &__item-name--md {
     font-size: 1.5em;
   }
+  &-swiper-buttons {
+    display: none;
+    @include media-breakpoint-down(lg){
+      display: flex;
+      position: absolute;
+      width: 95px;
+      justify-content: space-between;
+      z-index: 99;
+      top: -80px;
+      right: 0;
+    }
+    @include media-breakpoint-down(sm){
+      top: auto;
+      right: -20px;
+      bottom: 30%;
+      justify-content: flex-end;
+      & .swiper-btn-prev {
+        display: none;
+      }
+    }
+  }
+}
+
+.swiper-btn-prev, .swiper-btn-next {
+  width: 40px;
+  height: 40px;
+  background-color: #5948A066;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

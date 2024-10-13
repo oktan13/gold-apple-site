@@ -1,6 +1,7 @@
 
 import bootstrap from "../../node_modules/bootstrap/dist/js/bootstrap.js";
 import tileSwiper from "../components/tile/tile.js";
+import speakersSwiper from "../components/speakers/speakers.js";
 import popupVideo from "../components/UI/popup/popup-video/popup-video.js";
 import menu from "../components/menu/menu.js";
 import tabs from "../components/UI/tabs/tabs.js";
@@ -13,6 +14,7 @@ import popup from "../components/UI/popup/popup.js";
 
 window.addEventListener('DOMContentLoaded', function () {
     tileSwiper();
+    speakersSwiper();
     menu();
     popupVideo();
     tabs();
