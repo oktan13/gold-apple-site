@@ -1,4 +1,11 @@
 .faq {
+  &__col {
+    @include media-breakpoint-down(lg){
+      &:first-child {
+        margin-bottom: 20px;
+      }
+    }
+  }
   & .accordion-item {
     background-color: $white;
     border-radius: 12px;

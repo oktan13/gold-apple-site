@@ -87,3 +87,14 @@
   align-items: center;
   justify-content: center;
 }
+.review {
+  position: relative;
+}
+.review-swiper-buttons {
+  position: absolute;
+  width: 40px;
+  justify-content: space-between;
+  z-index: 99;
+  right: -10px;
+  top: 49%;
+}

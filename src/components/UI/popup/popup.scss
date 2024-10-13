@@ -64,16 +64,24 @@
     position: relative;
     transition: all 0.8s ease 0s;
     background-color: $white;
-    border-radius: 35px;
+    border-radius: 20px;
     padding: 20px;
     overflow: hidden;
-
-    @include media-breakpoint-down(lg){
-      border-radius: 25px;
-    }
+    width: 440px;
     @include media-breakpoint-down(md){
       padding: 25px;
     }
+  }
+  &__list {
+    margin-bottom: 60px;
+    padding-left: 20px;
+    & li {
+      margin-bottom: 5px;
+    }
+  }
+  &__sub-title {
+    font-size: 1.125em;
+    font-weight: 500;
   }
   &__wrap{
     position: relative;
