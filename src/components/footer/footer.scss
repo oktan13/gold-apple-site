@@ -8,14 +8,38 @@
     border-bottom: 1px solid $main-color;
   }
   &__title {
-    margin-bottom: 40px;
+    margin-bottom: 30px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(md){
+      font-size: 1.14em;
+    }
   }
   &__social-link {
     margin-left: 5px;
   }
-}
-.footer__wrapper {
-  margin-bottom: 40px;
+  &__logo {
+    @include media-breakpoint-down(md){
+      width: 72px;
+      margin-bottom: 20px;
+    }
+  }
+  &__privacy {
+    font-size: 0.75em;
+    @include media-breakpoint-down(md){
+      font-size: 0.86em;
+    }
+  }
+  &__requisites {
+    margin-bottom: 40px;
+    @include media-breakpoint-down(lg){
+      margin-bottom: 20px;
+    }
+    @include media-breakpoint-down(md){
+      font-size: 1.14em;
+    }
+  }
 }
 
 

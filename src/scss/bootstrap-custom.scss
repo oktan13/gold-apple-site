@@ -9,3 +9,12 @@
     --bs-gutter-x: 30px;
   }
 }
+.container-xl{
+  padding: 0 20px;
+  @include media-breakpoint-up(xl){
+    max-width: 100%;
+  }
+  @include media-breakpoint-up(xxl){
+    max-width: 1360px;
+  }
+}

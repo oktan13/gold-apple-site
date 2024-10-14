@@ -1,6 +1,9 @@
 .home-header {
   height: 100vh;
   position: relative;
+  @media screen and (max-width: 1024px) {
+    height: 70vh;
+  }
   &__video-wrap {
     position: absolute;
     top: 0;
@@ -23,9 +26,12 @@
   &__info-wrap {
     position: absolute;
     bottom: 0;
-    padding-bottom: 40px;
+    padding: 40px;
     width: 100%;
     z-index: 50;
+    @include media-breakpoint-down(lg) {
+      padding: 40px 20px;
+    }
   }
 
   &__info {
@@ -38,6 +44,7 @@
   &__info-heading {
     width: 560px;
     line-height: 1;
+    padding-right: 40px;
     & p {
       margin-bottom: 40px;
       padding-left: 30px;
@@ -89,10 +96,13 @@
 
 .header {
   position: relative;
-  padding: 35px 0;
+  padding: 35px 40px;
   z-index: 2;
   display: flex;
   justify-content: flex-end;
+  @include media-breakpoint-down(lg) {
+    padding: 30px 20px;
+  }
   &__menu {
     display: flex;
     align-items: center;
@@ -103,12 +113,27 @@
       margin-right: 20px;
       font-weight: 500;
       color: var(--color-white);
+      @include media-breakpoint-down(xl) {
+        margin-right: 15px;
+      }
     }
   }
   &__logo {
     position: absolute;
     top: 10px;
-    left: 0;
+    left: 40px;
+    @include media-breakpoint-down(lg) {
+      top: 20px;
+      left: 20px;
+    }
+    & img {
+      @include media-breakpoint-down(xl) {
+        width: 95px;
+      }
+      @include media-breakpoint-down(md) {
+        width: 64px;
+      }
+    }
   }
 }
 

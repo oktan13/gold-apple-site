@@ -16,7 +16,7 @@
             Ваш браузер не поддерживает элемент video.
         </video>
     </div>
-    <header class="container header">
+    <header class="header">
         <div class="header__logo">
             <img src="img/logo.svg" alt="logo">
         </div>
@@ -34,7 +34,7 @@
         </div>
     </header>
     <div class="home-header__info-wrap">
-        <div class="container home-header__info">
+        <div class="home-header__info">
             <div class="home-header__info-heading">
                 <div class="home-header__info-sticker">
                     <p>Только для сферы услуг</p>
@@ -820,27 +820,33 @@
 
 
     <footer class="footer">
-    <div class="footer__wrapper">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-3">
-                    <img src="img/logo-footer.svg" alt="...">
+    <div class="container-xl">
+            <div class="row align-items-center align-items-md-start align-items-lg-center">
+                <div class="order-1 col-6 order-md-1 col-md-3 col-lg-3 footer__col">
+                    <img class="footer__logo" src="img/logo-footer.svg" alt="...">
                 </div>
-                <div class="col-3">
-                    <p class="footer__title"><b>Реквизиты</b></p>
-                    <p>
-                    ИП Анч Лариса Николаевна<br>
-                    ИНН 501703338279<br>
-                    ОГРН 320774600494652<br>
-                    </p>
+                <div class="order-3 order-md-2 row align-items-end col-md-5 col-lg-6 footer__col">
+                    <div class="col-12 col-lg-6 footer__requisites">
+                        <p class="footer__title"><b>Реквизиты</b></p>
+                        <p>
+                            ИП Анч Лариса Николаевна<br>
+                            ИНН 501703338279<br>
+                            ОГРН 320774600494652<br>
+                        </p>
+                    </div>
+                    <div class="col-12 col-lg-6 footer__requisites text-start text-lg-end">
+                        <p>
+                            125466, Россия, г. Москва <br>
+                            Куркинское ш., д.48, кв. 8
+                        </p>
+                    </div>
+                    <div class="col-12 footer__privacy">
+                        <div class="footer__link text-start text-lg-center">
+                            <a href="/">Политика конфиденциальности</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-3">
-                    <p>
-                    125466, Россия, г.Москва<br>
-                    Куркинское ш., д.48, кв. 8
-                    </p>
-                </div>
-                <div class="col-3 footer__social text-end">
+                <div class="order-2 col-6 order-md-3 col-md-4 col-lg-3 footer__col footer__social text-end">
                     <a class="footer__social-link" href="">
                         <svg width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="0.5" width="34" height="34" rx="4" fill="white"/>
@@ -863,10 +869,6 @@
                 </div>
             </div>
         </div>
-    </div>
-    <div class="footer__link text-center">
-        <a href="/">Политика конфиденциальности</a>
-    </div>
 </footer>
 
 </main>
