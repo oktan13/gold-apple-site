@@ -38,11 +38,12 @@
   &--transparent{
     background-color: unset;
     border-color: $white;
-    height: 56px;
-    width: 200px;
+    height: 40px;
+    width: 150px;
     padding: 0;
-    @include media-breakpoint-up(lg){
+    @include media-breakpoint-up(md){
       height: 56px;
+      width: 200px;
       border-radius: 30px;
       font-size: 1em;
       &:hover{
@@ -50,6 +51,9 @@
         font-weight: 600;
         border: 3px solid $white;
       }
+    }
+    @include media-breakpoint-up(md){
+
     }
   }
 

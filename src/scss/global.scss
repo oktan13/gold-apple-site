@@ -3,6 +3,9 @@ section {
   @include media-breakpoint-down(xl) {
     margin-bottom: 6.25em;
   }
+  @include media-breakpoint-down(md) {
+    margin-bottom: 5.715em;
+  }
 }
 .overflow-hidden-mobile{
   @include media-breakpoint-down(lg){

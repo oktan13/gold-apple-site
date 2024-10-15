@@ -1,7 +1,7 @@
 {% extends "base.njk" %}
 
 {% block content %}
-    <section>
+    <section data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
         <div class="big-txt-wrap text-center">
             <p class="big-txt"><span>Прокачайте свои навыки в сервисе, который продает,</span> если вы администратор или мастер. <span>Повысьте ключевые показатели бизнеса,</span> если вы собственник или управляющий.</p>
         </div>
@@ -9,7 +9,7 @@
     {% include 'components/for-whom/for-whom.njk' %}
     {% include 'components/why-we/why-we.njk' %}
     {% include 'components/tile/tile.njk' %}
-    <section>
+    <section data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
         <div class="container text-center">
             <h2 class="mb-20">Успешность бизнеса в сфере услуг напрямую зависит от качества обслуживания. <br><span>Прокачайте уровень сервиса <br>в школе«Золотой стандарт».</span></h2>
             <p class="mb-20">Присоединяйтесь к нам и монетизируйте впечатления <br>клиентов от идеально оказанных услуг.</p>
@@ -19,7 +19,7 @@
     {% include 'components/modules/modules.njk' %}
     {% include 'components/tariffs/tariffs.njk' %}
     {% include 'components/target/target.njk' %}
-    <section>
+    <section data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
         <div class="container-lg text-center">
             <h2 class="mb-20">Присоединяйтесь к нам и станьте <br class="d-none d-sm-inline"><span>частью этого важного процесса!</span></h2>
             <button class="mx-auto button button--middle">Записаться на курс</button>
@@ -27,7 +27,7 @@
     </section>
     {% include 'components/speakers/speakers.njk' %}
     {% include 'components/faq/faq.njk' %}
-    <section>
+    <section data-aos="fade-in" data-aos-duration="1500" data-aos-once="true">
         <div class="container text-center">
             <h2 class="mb-20">Записаться <span>на курс</span></h2>
             <div class="d-block d-sm-flex justify-content-center">
@@ -57,5 +57,7 @@
             </div>
         </div>
     </div>
-
+    <script>
+        AOS.init();
+    </script>
 {% endblock %}

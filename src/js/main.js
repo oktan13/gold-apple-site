@@ -4,7 +4,7 @@ import tileSwiper from "../components/tile/tile.js";
 import speakersSwiper from "../components/speakers/speakers.js";
 import reviewSwiper from "../components/speakers/review.js";
 import popupVideo from "../components/UI/popup/popup-video/popup-video.js";
-import menu from "../components/menu/menu.js";
+import menu from "../components/header/header.js";
 import tabs from "../components/UI/tabs/tabs.js";
 import toggle from "../components/UI/toggle/toggle.js";
 import form from "../components/UI/form/form.js";
