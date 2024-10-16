@@ -230,3 +230,37 @@
   }
 }
 
+.fix-header {
+  position: fixed;
+  top: -100%;
+  display: flex;
+  left: 0;
+  width: 100%;
+  padding: 15px 40px;
+  background-color: $white;
+  z-index: 60;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  @include media-breakpoint-down(lg){
+    display: none !important;
+  }
+  &__menu {
+    align-items: center;
+    display: flex;
+  }
+  &__menu-nav {
+    display: flex;
+    & a {
+      margin-right: 20px;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.fix-header--is-scroll {
+  transition: all 0.5s ease-in-out;
+  top: 0;
+}
+

@@ -11,7 +11,22 @@
 </head>
 <body class="">
 
-    <section class="home-header">
+    <div class="fix-header">
+    <img src="img/logo-fix-header.svg" alt="...">
+    <div class="fix-header__menu">
+        <nav class="fix-header__menu-nav">
+            <a href="">О курсе</a>
+            <a href="">О нас</a>
+            <a href="">Программа</a>
+            <a href="">Стоимость</a>
+            <a href="">Спикеры</a>
+            <a href="">FAQ</a>
+            <a href="">Контакты</a>
+        </nav>
+        <button data-popup="open-popup" href="#popupFeedback" class="button button--transparent-black">Заказать звонок</button>
+    </div>
+</div>
+<section class="home-header">
     <div class="home-header__video-wrap">
         <video playsinline="playsinline" muted="muted" autoplay="autoplay" loop="loop">
             <source src="videos/learning.mp4" type="video/mp4"/>
@@ -54,7 +69,7 @@
                     </a>
                 </div>
             </nav>
-            <button data-popup="open-popup" href="#popup1" class="button button--transparent">Заказать звонок</button>
+            <button data-popup="open-popup" href="#popupFeedback" class="button button--transparent">Заказать звонок</button>
             <img src="img/mobile-menu-open.svg" alt="..." class="mobile-menu-open" data-menu="open-button">
         </div>
     </header>
@@ -936,6 +951,33 @@
                 </div>
                 <button class="button button--full mb-2">Записаться на курс</button>
                 <button class="button button--transparent-purple button--full">Заказать звонок</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup" id="popupFeedback">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close-btn popup__close-btn--dark" data-popup="close-popup"><i class="icon-cross"></i></div>
+            <div class="popup__wrap">
+                <p class="big-txt text-center mb-1 popup__title">ЗАКАЗАТЬ <span>ЗВОНОК</span></p>
+                <p class="text-center mb-3 mb-lg-4 popup__sub-title">Оставьте контактный телефон и мы вам перезвоним</p>
+                <form action="">
+                    <div class="form__input-wrap mb-3">
+                        <div class="form__input-name">Имя</div>
+                        <div>
+                            <input class="form__input" name="name" value="" inputmode="text" required="" placeholder="Введите ваше имя">
+                        </div>
+                    </div>
+                    <div class="form__input-wrap mb-5">
+                        <div class="form__input-name">Телефон</div>
+                        <div data-mask="+7 (999) 999-99-99">
+                            <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__" name="phone" value="" inputmode="text" required="">
+                        </div>
+                    </div>
+                </form>
+                <button class="button button--full">Отправить</button>
             </div>
         </div>
     </div>

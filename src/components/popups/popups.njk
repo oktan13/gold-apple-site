@@ -113,3 +113,30 @@
         </div>
     </div>
 </div>
+
+<div class="popup" id="popupFeedback">
+    <div class="popup__body">
+        <div class="popup__content">
+            <div class="popup__close-btn popup__close-btn--dark" data-popup="close-popup"><i class="icon-cross"></i></div>
+            <div class="popup__wrap">
+                <p class="big-txt text-center mb-1 popup__title">ЗАКАЗАТЬ <span>ЗВОНОК</span></p>
+                <p class="text-center mb-3 mb-lg-4 popup__sub-title">Оставьте контактный телефон и мы вам перезвоним</p>
+                <form action="">
+                    <div class="form__input-wrap mb-3">
+                        <div class="form__input-name">Имя</div>
+                        <div>
+                            <input class="form__input" name="name" value="" inputmode="text" required="" placeholder="Введите ваше имя">
+                        </div>
+                    </div>
+                    <div class="form__input-wrap mb-5">
+                        <div class="form__input-name">Телефон</div>
+                        <div data-mask="+7 (999) 999-99-99">
+                            <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__" name="phone" value="" inputmode="text" required="">
+                        </div>
+                    </div>
+                </form>
+                <button class="button button--full">Отправить</button>
+            </div>
+        </div>
+    </div>
+</div>

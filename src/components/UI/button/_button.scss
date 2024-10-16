@@ -58,6 +58,23 @@
     }
   }
 
+  &--transparent-black {
+    background-color: unset;
+    border-color: $main-color;
+    height: 56px;
+    width: 200px;
+    border-radius: 30px;
+    font-size: 1em;
+    color: $main-color;
+    padding: 0;
+    &:hover{
+      background-color: unset;
+      font-weight: 600;
+      border: 3px solid $main-color;
+    }
+
+  }
+
   &--transparent-purple {
     background-color: unset;
     border-color: $second-color;

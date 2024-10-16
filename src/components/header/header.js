@@ -22,4 +22,11 @@ export default function header(){
             }
         });
     }
+
+    let fixHeader = document.querySelector('.fix-header');
+    if (fixHeader && window.innerWidth >= 992) {
+        window.addEventListener('scroll', () => {
+            fixHeader.classList.toggle('fix-header--is-scroll', window.pageYOffset > 500);
+        });
+    }
 }
