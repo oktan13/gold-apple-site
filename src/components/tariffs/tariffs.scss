@@ -110,4 +110,10 @@
       background-color: $white;
     }
   }
+  &__select-points {
+    padding: 45px 0 75px 0;
+    & .checkbox {
+      margin-bottom: 20px;
+    }
+  }
 }
