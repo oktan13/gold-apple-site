@@ -42,6 +42,9 @@
     color: $second-color;
     margin-bottom: 10px;
     font-style: italic;
+    @include media-breakpoint-down(md){
+      font-size: 3em;
+    }
   }
   &__item-desc {
     color: $gray-1;

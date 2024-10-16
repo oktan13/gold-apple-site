@@ -54,6 +54,9 @@ h1 {
   @include media-breakpoint-down(xl) {
     font-size: 2.625em;
   }
+  @include media-breakpoint-down(md) {
+    font-size: 2.375em;
+  }
 }
 
 h2 {
@@ -63,7 +66,7 @@ h2 {
     font-size: 2em;
   }
   @include media-breakpoint-down(md) {
-    font-size: 1.71em;
+    font-size: 1.5em;
   }
 }
 

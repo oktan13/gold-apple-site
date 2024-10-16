@@ -12,9 +12,6 @@
     @include media-breakpoint-down(lg){
       margin-bottom: 20px;
     }
-    @include media-breakpoint-down(md){
-      font-size: 1.14em;
-    }
   }
   &__social-link {
     margin-left: 5px;
@@ -27,17 +24,11 @@
   }
   &__privacy {
     font-size: 0.75em;
-    @include media-breakpoint-down(md){
-      font-size: 0.86em;
-    }
   }
   &__requisites {
     margin-bottom: 40px;
     @include media-breakpoint-down(lg){
       margin-bottom: 20px;
-    }
-    @include media-breakpoint-down(md){
-      font-size: 1.14em;
     }
   }
 }

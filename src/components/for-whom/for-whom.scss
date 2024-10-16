@@ -44,6 +44,10 @@
     border-radius: 25px;
     color: $second-color;
     font-weight: 700;
+    @include media-breakpoint-down(md) {
+      font-size: 14px;
+      padding: 9px 20px;
+    }
   }
 
   &__item-more {
@@ -59,6 +63,11 @@
     z-index: 1;
     & img {
       width: auto;
+    }
+    @include media-breakpoint-down(md) {
+      & p {
+        font-size: 16px;
+      }
     }
   }
 
