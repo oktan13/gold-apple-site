@@ -47,16 +47,18 @@
   }
 
   &__close-btn {
-    position: absolute;
+    position: fixed;
     top: 21px;
     right: 17px;
     padding: 5px;
     cursor: pointer;
     z-index: 3;
-
-    @include media-breakpoint-down(md){
+    color: $white;
+    @include media-breakpoint-down(lg){
+      position: absolute;
       top: 15px;
       right: 15px;
+      color: $main-color;
     }
   }
 

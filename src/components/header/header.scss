@@ -71,10 +71,6 @@
     width: 560px;
     line-height: 1;
     padding-right: 40px;
-    & p {
-      margin-bottom: 40px;
-      padding-left: 30px;
-    }
     @include media-breakpoint-down(md) {
       width: 100%;
       line-height: 1.2;
@@ -84,10 +80,18 @@
 
   &__info-sticker {
     position: relative;
-    & img {
-      position: absolute;
-      top: -130%;
-      left: 0;
+    &-title {
+      width: 170px;
+      height: 87px;
+      margin-bottom: 20px;
+      text-align: center;
+      line-height: 1.3;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url("../img/border.svg");
+      background-size: cover;
+      background-repeat: no-repeat;
     }
   }
 
