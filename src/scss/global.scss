@@ -1,10 +1,10 @@
 section {
   margin-bottom: 10em;
   @include media-breakpoint-down(xl) {
-    margin-bottom: 6.25em;
+    margin-bottom: 5.625em;
   }
   @include media-breakpoint-down(md) {
-    margin-bottom: 5.715em;
+    margin-bottom: 5em;
   }
 }
 .overflow-hidden-mobile{
@@ -127,4 +127,17 @@ p span {
       right: -85%;
     }
   }
+}
+
+#aboutСourse:before,
+#about:before,
+#program:before,
+#price:before,
+#speakers:before,
+#contacts:before,
+#faq:before {
+  display: block;
+  content: "";
+  height: 100px;
+  margin: -100px 0 0;
 }
