@@ -27,7 +27,7 @@ const bs = browserSync.create();
 
 // Пути к файлам и папкам
 const srcFolder = 'src';
-const distFolder = 'dist';
+const distFolder = 'local/templates/services-school/assets';
 
 const paths = {
     styles: {
