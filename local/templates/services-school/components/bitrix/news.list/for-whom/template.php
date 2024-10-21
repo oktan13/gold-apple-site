@@ -42,7 +42,7 @@ if (!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED !== true) die();
                         <?php endforeach;?>
                     </ul>
                     <?php endif;?>
-                    <button class="button button--full mb-2">Записаться на курс</button>
+                    <a href="#price" data-popup="close-popup" class="button button--full mb-2">Записаться на курс</a>
                     <button data-popup="open-popup" href="#popupFeedback" class="button button--transparent-purple button--full">Заказать звонок</button>
                 </div>
             </div>

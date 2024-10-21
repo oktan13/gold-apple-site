@@ -74,7 +74,7 @@ IncludeTemplateLangFile(__FILE__);
                 <div class="home-header__info">
                     <div class="home-header__info-heading">
                         <div class="home-header__info-sticker">
-                            <p class="home-header__info-sticker-title">Только для <br>сферы услуг</p>
+                            <p class="home-header__info-sticker-title">Только для <br>сферы услуг<canvas id="lottie"></canvas></p>
                         </div>
                         <h1><?php
                             $APPLICATION->IncludeFile(SITE_TEMPLATE_PATH."/chunks/header/heading.php", [],

@@ -334,7 +334,7 @@ $APPLICATION->SetTitle("Школа высокого сервиса «Золот�
                             </div>
                             <p>Обучайтесь высокому сервису выгодно: сами или с коллегой.</p>
                         </div>
-                        <button class="button button--full" data-popup="open-popup" href="#popupIndividualTariff">Записаться на курс со скидкой</button>
+                        <a href="https://get.highserviceschool.ru/gold_pay" class="button button--full">Записаться на курс со скидкой</a>
                     </div>
                     <img src="<?=SITE_TEMPLATE_PATH;?>/assets/img/icons/tariff-1.svg" alt="..." class="tariffs__ico tariffs__ico--flag">
                 </div>
@@ -731,7 +731,7 @@ $APPLICATION->SetTitle("Школа высокого сервиса «Золот�
     <div class="container text-center">
         <h2 class="mb-20">Записаться <span>на курс</span></h2>
         <div class="d-block d-md-flex justify-content-center">
-            <button data-popup="open-popup" href="#popupIndividualTariff" class="button button--small mb-3 mb-md-0 me-md-1">Тариф «ИНДИВИДУАЛЬНЫЙ»</button>
+            <a href="https://get.highserviceschool.ru/gold_pay" class="button button--small mb-3 mb-md-0 me-md-1">Тариф «ИНДИВИДУАЛЬНЫЙ»</a>
             <button data-popup="open-popup" href="#popupCommandTariff" class="button button--small button--white ms-1">Тариф «КОМАНДНЫЙ»</button>
         </div>
     </div>
