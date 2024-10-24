@@ -88,6 +88,9 @@
   &__sub-title {
     font-size: 1.125em;
     font-weight: 500;
+    @include media-breakpoint-down(lg){
+      font-size: 1em;
+    }
   }
   &__wrap{
     position: relative;

@@ -77,9 +77,9 @@
     line-height: 1;
     font-size: 14px;
 
-    @include media-breakpoint-down(lg){
+    /*@include media-breakpoint-down(lg){
       font-size: 12px;
-    }
+    }*/
   }
   &__input-name{
     margin-bottom: 12px;
@@ -153,13 +153,13 @@
     border-radius: 15px;
     outline: unset;
     width: 100%;
-    font-size: 14px;
+    font-size: 16px;
     color: $main-color;
     padding: 13px 25px;
     font-weight: 500;
 
     @include media-breakpoint-up(lg){
-      font-size: 16px;
+      /*font-size: 16px;*/
       padding: 12px 25px;
     }
 

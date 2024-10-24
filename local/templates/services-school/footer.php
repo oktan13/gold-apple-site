@@ -26,7 +26,7 @@ IncludeTemplateLangFile(__FILE__);
                         </div>
                         <div class="col-12 footer__privacy">
                             <div class="footer__link text-start text-lg-center">
-                                <a href="/">Политика конфиденциальности</a>
+                                <a href="/upload/docs/privacy-policy.pdf" target="_blank">Политика конфиденциальности</a>
                             </div>
                         </div>
                     </div>
@@ -47,7 +47,6 @@ IncludeTemplateLangFile(__FILE__);
                 </div>
             </div>
         </footer>
-
         <div class="popup" id="popupIndividualTariff">
             <div class="popup__body">
                 <div class="popup__content">
@@ -142,33 +141,56 @@ IncludeTemplateLangFile(__FILE__);
                 </div>
             </div>
         </div>
+
         <div class="popup" id="popupFeedback">
             <div class="popup__body">
                 <div class="popup__content">
                     <div class="popup__close-btn popup__close-btn--dark" data-popup="close-popup"><i class="icon-cross"></i></div>
-                    <div class="popup__wrap">
-                        <p class="big-txt text-center mb-1 popup__title">ЗАКАЗАТЬ <span>ЗВОНОК</span></p>
-                        <p class="text-center mb-3 mb-lg-4 popup__sub-title">Оставьте контактный телефон и мы вам перезвоним</p>
-                        <form action="">
-                            <div class="form__input-wrap mb-3">
-                                <div class="form__input-name">Имя</div>
-                                <div>
-                                    <input class="form__input" name="name" value="" inputmode="text" required="" placeholder="Введите ваше имя">
-                                </div>
-                            </div>
-                            <div class="form__input-wrap mb-5">
-                                <div class="form__input-name">Телефон</div>
-                                <div data-mask="+7 (999) 999-99-99">
-                                    <input type="tel" class="form__input" placeholder="+7 (___) ___-__-__" name="phone" value="" inputmode="text" required="">
-                                </div>
-                            </div>
-                        </form>
-                        <button class="button button--full">Отправить</button>
-                    </div>
+                    <?php $APPLICATION->IncludeComponent(
+                        "school:simple.feedback",
+                        "popup",
+                        array(
+                            "AJAX_MODE" => "Y",
+                            "AJAX_OPTION_SHADOW" => "N",
+                            "AJAX_OPTION_JUMP" => "N",
+                            "AJAX_OPTION_STYLE" => "Y",
+                            "AJAX_OPTION_HISTORY" => "N",
+                            "EMAIL_TO" => "info@highserviceschool.ru",
+                            "EVENT_MESSAGE_ID" => array(
+                                0 => "7",
+                            ),
+                            "OK_TEXT" => "Спасибо, ваше сообщение отправлено.",
+                            "REQUIRED_FIELDS" => array(
+                                0 => "NAME",
+                                1 => "PHONE",
+                            ),
+                            "USE_CAPTCHA" => "N",
+                            "COMPONENT_TEMPLATE" => "popup"
+                        ),
+                        false
+                    );?>
                 </div>
             </div>
         </div>
 
+
+        <div class="popup" id="popupFeedbackSuccess">
+            <div class="popup__body">
+                <div class="popup__content">
+                    <div class="popup__close-btn popup__close-btn--dark" data-popup="close-popup"><i class="icon-cross"></i></div>
+                    <div class="popup__wrap">
+                        <div class="text-center mb-4 mt-4">
+                            <svg fill="#06BCC1" width="130px" height="130px" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <title>success-standard-line</title>
+                                <path class="clr-i-outline clr-i-outline-path-1" d="M18,2A16,16,0,1,0,34,18,16,16,0,0,0,18,2Zm0,30A14,14,0,1,1,32,18,14,14,0,0,1,18,32Z"></path><path class="clr-i-outline clr-i-outline-path-2" d="M28,12.1a1,1,0,0,0-1.41,0L15.49,23.15l-6-6A1,1,0,0,0,8,18.53L15.49,26,28,13.52A1,1,0,0,0,28,12.1Z"></path>
+                                <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+                            </svg>
+                        </div>
+                        <p class="big-txt text-center mb-4 popup__title">ВАША ЗАЯВКА <br><span>УСПЕШНО ОТПРАВЛЕНА!</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
         <script type="module">
             import { DotLottie } from "https://cdn.jsdelivr.net/npm/@lottiefiles/dotlottie-web/+esm";
             setTimeout(function () {

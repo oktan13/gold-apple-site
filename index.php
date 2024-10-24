@@ -360,7 +360,7 @@ $APPLICATION->SetTitle("Школа высокого сервиса «Золот�
                             </div>
                             <p>Обучайтесь высокому сервису выгодно: сами или с коллегой.</p>
                         </div>
-                        <button class="button button--full button--white" data-popup="open-popup" href="#popupCommandTariff">Записаться на курс со скидкой</button>
+                        <a href="https://get.highserviceschool.ru/gold_pay_korp" class="button button--full button--white" data-popup="open-popup">Записаться на курс со скидкой</a>
                     </div>
                     <img src="<?=SITE_TEMPLATE_PATH;?>/assets/img/icons/tariff-2.svg" alt="..." class="tariffs__ico tariffs__ico--heart">
                 </div>
