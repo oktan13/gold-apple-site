@@ -732,7 +732,7 @@ $APPLICATION->SetTitle("Школа высокого сервиса «Золот�
         <h2 class="mb-20">Записаться <span>на курс</span></h2>
         <div class="d-block d-md-flex justify-content-center">
             <a href="https://get.highserviceschool.ru/gold_pay" class="button button--small mb-3 mb-md-0 me-md-1">Тариф «ИНДИВИДУАЛЬНЫЙ»</a>
-            <button data-popup="open-popup" href="#popupCommandTariff" class="button button--small button--white ms-1">Тариф «КОМАНДНЫЙ»</button>
+            <a href="https://get.highserviceschool.ru/gold_pay_korp" data-popup="open-popup" class="button button--small button--white ms-1">Тариф «КОМАНДНЫЙ»</a>
         </div>
     </div>
 </section>

@@ -15,7 +15,7 @@
   @include media-breakpoint-up(md) {
     height: 70px;
     padding: 0 40px;
-    font-size: 1.125em;
+    font-size: 1em;
     &:hover{
       background-color: $second-color-active;
       border-color: $second-color-active;
